@@ -15,3 +15,21 @@ window.addEventListener('scroll', () => {
     }
   }
 });
+
+// Contact form popup
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Stop page refresh
+
+  // Show popup
+  const popup = document.getElementById('popup');
+  popup.classList.add('show');
+
+  // Clear form
+  this.reset();
+
+  // Hide popup after 3 seconds
+  setTimeout(() => {
+    popup.classList.remove('show');
+  }, 3000);
+});
+
