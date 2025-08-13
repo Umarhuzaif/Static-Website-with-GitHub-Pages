@@ -16,20 +16,23 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Contact form popup
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault(); // Stop page refresh
+// Contact form thank-you message
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const thankYou = document.getElementById("thankYou");
 
-  // Show popup
-  const popup = document.getElementById('popup');
-  popup.classList.add('show');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent page reload
 
-  // Clear form
-  this.reset();
+    // Show thank-you message
+    thankYou.style.display = "block";
 
-  // Hide popup after 3 seconds
-  setTimeout(() => {
-    popup.classList.remove('show');
-  }, 3000);
+    // Clear form fields
+    form.reset();
+
+    // Hide after 3 seconds
+    setTimeout(() => {
+      thankYou.style.display = "none";
+    }, 3000);
+  });
 });
-
