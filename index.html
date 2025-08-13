@@ -3,31 +3,65 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My GitHub Pages Site</title>
+  <title>My Professional GitHub Pages Site</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Site 🎉</h1>
-    <p>Deployed with GitHub Pages.</p>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>This is a simple static website using HTML & CSS.</p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>Project A</li>
-        <li>Project B</li>
-      </ul>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My Website 🎉</h1>
+    <p>Showcasing my work, skills, and passion for web development.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer dedicated to creating visually appealing and 
+      functional websites. I enjoy learning new technologies, experimenting with 
+      animations, and building projects that solve real-world problems.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Task Manager App</h3>
+        <p>A to-do list application with CRUD functionality.</p>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Fetches real-time weather data from an API.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: youremail@example.com</p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> Your Name</p>
+    <p>© <span id="year"></span> MyPortfolio | Built with ❤️ using GitHub Pages</p>
   </footer>
 
   <script>
