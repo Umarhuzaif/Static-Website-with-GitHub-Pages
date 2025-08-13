@@ -26,11 +26,67 @@ h2 { margin-bottom: 1.5rem; color: #FFD700; }
 .project-card { background: #112240; padding: 1.5rem; border-radius: 10px; text-decoration: none; color: #E6F1FF; transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .project-card:hover { transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
 
-/* Contact Form */
-form { display: flex; flex-direction: column; }
-input, textarea { margin-bottom: 1rem; padding: 0.7rem; border: none; border-radius: 5px; font-size: 1rem; }
-button { background: #FFD700; color: #0A192F; border: none; padding: 0.7rem; border-radius: 5px; cursor: pointer; font-weight: bold; }
-button:hover { background: #e6c200; }
+/* Contact Section */
+.contact-text {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #8892B0;
+  font-size: 1.1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #112240;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+.input-group i {
+  margin-right: 0.5rem;
+  color: #FFD700;
+}
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #E6F1FF;
+  font-size: 1rem;
+  resize: none;
+}
+
+/* Popup Styling */
+.popup {
+  display: none;
+  margin-top: 1rem;
+  background: #0f5132;
+  color: #d1e7dd;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+.popup.show {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Button */
+button.btn {
+  margin-top: 0.5rem;
+}
+
 
 /* Footer */
 footer { text-align: center; padding: 1rem; background: #0A192F; margin-top: 2rem; }
